@@ -1,0 +1,121 @@
+.btn a {
+  width: 316px;
+  background: #1e3f87;
+  color: #ffffff;
+  padding: 0 63px;
+  border-radius: 25px;
+  box-shadow: 3px 6px 8px 4px #6795bf;
+  cursor: pointer;
+  font-size: 22px;
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
+}
+.selfbtn {
+  background: #1e3f87;
+  color: #ffffff;
+  padding: 0 63px;
+  border-radius: 34px;
+  box-shadow: 0 0 8px 4px #6795bf;
+  cursor: pointer;
+  font-size: 25px;
+  height: 68px;
+  line-height: 68px;
+}
+.selfbtn2 {
+  background: #1e3f87;
+  color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  box-shadow: 0 0 8px 4px #6795bf;
+  cursor: pointer;
+  font-size: 22px;
+  box-sizing: border-box;
+  width: 358px;
+  text-align: center;
+}
+.selfbtnFFF {
+  background: #ffffff;
+  color: #282675;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 8px 4px #c3d6e8;
+  cursor: pointer;
+}
+.selfbtn3 a {
+  margin: 0 auto;
+  width: 316px;
+  background: #1e3f87;
+  color: #ffffff;
+  /* padding: 0 60px; */
+  border-radius: 34px;
+  box-shadow: 0 0 8px 4px #6795bf;
+  cursor: pointer;
+  font-size: 25px;
+  height: 68px;
+}
+.pageinfo {
+  font-size: 32px;
+  color: #363636;
+  margin: 0 0 48px;
+}
+
+.title-card {
+  text-align: left;
+  width: 100%;
+  font-size: 24px;
+}
+.stake {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.stake .stake-title {
+  /* width: 70%; */
+}
+.stake .icon {
+  /* width: 200px; */
+  align-self: center;
+  text-align: center;
+}
+.miancolor {
+  color: #060528;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0e9e7;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 6px 6px 12px #e2d6cf, -12px -12px 24px -2px #f7f4f2ff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  height: 56px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.stakeMoney {
+  font-family: "Noto Sans SC", sans-serif;
+  color: #1f4088;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .selfbtn3 a {
+    width: 80%;
+    padding: 0;
+  }
+}

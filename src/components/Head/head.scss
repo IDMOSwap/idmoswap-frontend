@@ -1,0 +1,181 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.topBar {
+  .logo {
+    width: 185px;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  // background: rgb(21, 45, 93);
+  color: #1d3f87;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  .nav {
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 25px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 25px;
+      li {
+        a {
+          padding: 9px 18px;
+          color: #7f8997;
+          font-weight: 500;
+          font-style: italic;
+          text-decoration: none;
+          &.active {
+            color: #1e4087;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .account {
+    .selfbtnFFF {
+      padding: 9px 18px;
+      font-size: 15px;
+      box-shadow: 0px 0px 14px 0px #9a9fab;
+    }
+  }
+}
+.language {
+  width: 72px;
+  height: 36px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border-radius: 44px;
+  span {
+    padding: 8px;
+    &.active {
+      background: url("../../assets/imgpc/handle.png") no-repeat center 1px;
+      background-size: 108% 100%;
+    }
+  }
+  cursor: pointer;
+}
+.moblietopBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  .mlogo {
+    width: 123px;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  .mnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mmenu {
+      margin-right: 10px;
+      position: relative;
+      > img {
+        display: block;
+        width: 19px;
+      }
+      ul {
+        transition: all 2s ease;
+        background: rgba(30, 63, 135, 0.9);
+        margin: 0 10px;
+        padding: 10px;
+        width: 85px;
+        border-radius: 10px;
+        position: absolute;
+        right: -18px;
+        top: 28px;
+        li {
+          line-height: 1.5;
+          margin-bottom: 2px;
+
+          a {
+            color: #fff;
+          }
+        }
+        &::after {
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+          top: -5px;
+          left: auto;
+          right: 23%;
+          border-bottom: 5px solid #1e3f87;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+        }
+      }
+    }
+  }
+  .account {
+    .selfbtnFFF {
+      font-size: 12px;
+      padding: 9px 18px;
+    }
+  }
+}
+@media (max-width: 699px) {
+  .topBar {
+    .logo {
+      width: 123px;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+    .nav {
+      ul {
+        flex-direction: column;
+        background: rgba(0, 234, 255, 0.5);
+        margin: 0 10px;
+        padding: 10px;
+        width: 75px;
+        border-radius: 10px;
+        position: absolute;
+        right: 16%;
+        visibility: hidden;
+      }
+    }
+    .account {
+      .selfbtnFFF {
+        font-size: 12px;
+        padding: 9px 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+p {
+  margin: 0;
+}
+.basepage {
+  .home {
+    min-height: calc(100vh - 504px);
+  }
+}
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  .bigpic {
+    img {
+      width: 211px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .homefont {
+    margin-bottom: 50px;
+    h2 {
+      font-size: 75px;
+      text-align: center;
+      background: linear-gradient(to bottom, #002f51, #03e1fb);
+      -webkit-background-clip: text;
+      color: transparent;
+      margin: 10px 0;
+    }
+    p {
+      margin: 10px 0;
+      color: #7f8998;
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  .farmwidth {
+    width: 1100px;
+    margin: 0 auto;
+  }
+  p.cooming {
+    font-size: 28px;
+  }
+}
+.fram {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .framchild {
+    flex: 1;
+    .farmCart {
+      background: linear-gradient(-45deg, #f2f6fb, #e7edf6);
+      box-shadow: 0 0 21px 10px #c9cdd6;
+      border-radius: 31px;
+      flex: 1;
+      color: #fff;
+      height: 318px;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      .farmHeader {
+        color: #808a98;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            display: block;
+            height: 28px;
+          }
+          h2 {
+            color: #1f4087;
+            font-size: 21px;
+            font-weight: 700;
+            margin: 0;
+          }
+        }
+        h2 {
+          color: #1f4087;
+          font-size: 21px;
+          font-weight: 700;
+          margin: 0;
+          height: 21px;
+          line-height: 23px;
+        }
+      }
+      .farmbody {
+        text-align: center;
+        margin: 30px 0;
+        .mt20 {
+          margin-top: 20px;
+        }
+      }
+      .farmaction {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .selfbtn {
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+    }
+    .Stake {
+      .farmbody {
+        margin: 35px 0;
+      }
+    }
+  }
+}
+.frampledge {
+  max-width: 1022px;
+}
+.pd10 {
+  padding-bottom: 0px;
+  .homefont {
+    h2 {
+      font-size: 66px;
+    }
+  }
+}
+.farmcardicon {
+  display: block;
+  height: 26px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .basepage {
+    .home {
+      min-height: calc(100vh - 320px);
+    }
+  }
+  .home {
+    .bigpic {
+      img {
+        width: 66px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .homefont {
+      h2 {
+        font-size: 26px;
+        width: 79%;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    .farmwidth {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  .fram {
+    width: 100%;
+    flex-direction: column;
+    .framchild {
+      width: 96%;
+      .farmCart {
+        height: 252px;
+        padding: 20px 20px;
+        .farmbody {
+          margin: 20px 0;
+        }
+
+        .farmaction {
+          .selfbtn2 {
+            font-size: 14px;
+          }
+          .selfbtn {
+            font-size: 14px;
+            padding: 0 45px;
+          }
+        }
+      }
+      .Stake {
+        .farmbody {
+          margin: 30px 0;
+        }
+      }
+    }
+  }
+  .token {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 10px;
+  }
+  .Withdraw {
+    font-size: 20px;
+  }
+  .Deposit {
+    font-size: 20px;
+  }
+}

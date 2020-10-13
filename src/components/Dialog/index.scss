@@ -1,0 +1,140 @@
+.loadingModal {
+  padding: 10px 20px 20px;
+  border-radius: 20px;
+  .loadingtitle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .loadingtxt {
+    text-align: center;
+    h3 {
+      margin: 0;
+      font-weight: 500;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    h4 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 12px;
+      color: #565a69;
+      margin-top: 10px;
+    }
+  }
+  .loadingContent {
+    height: 120px;
+    text-align: center;
+    .MuiSvgIcon-fontSizeLarge {
+      font-size: 8rem;
+    }
+  }
+}
+.MuiPaper-rounded {
+  border-radius: 20px !important;
+}
+.shadow {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  border-radius: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.5), 2px -2px 10px 0 rgba(255, 255, 255, 0.5);
+}
+.loader {
+  background: -webkit-linear-gradient(left, skyblue 50%, #fafafa 50%);
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  animation: time 8s steps(500, start) infinite;
+}
+.mask {
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  animation: mask 8s steps(250, start) infinite;
+  transform-origin: 100% 50%;
+}
+@keyframes time {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes time {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mask {
+  0% {
+    background: #fafafa; /* Background colour */
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #fafafa; /* Background colour */
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: skyBlue; /* Foreground colour */
+    transform: rotate(0deg);
+  }
+  100% {
+    background: skyBlue; /* Foreground colour */
+    transform: rotate(-180deg);
+  }
+}
+@-webkit-keyframes mask {
+  0% {
+    background: #fafafa; /* Background colour */
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #fafafa; /* Background colour */
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: skyBlue; /* Foreground colour */
+    transform: rotate(0deg);
+  }
+  100% {
+    background: skyBlue; /* Foreground colour */
+    transform: rotate(-180deg);
+  }
+}
+
+.errorContent {
+  text-align: center;
+  .MuiSvgIcon-fontSizeLarge {
+    font-size: 8rem;
+  }
+  width: 270px;
+  h3 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #f50057;
+  }
+}
+
+.successtext {
+  text-align: center;
+  margin-bottom: 10px;
+  h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 16px 0 10px;
+  }
+  a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #f50057;
+  }
+}
