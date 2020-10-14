@@ -59,5 +59,6 @@ export default {
   Dismiss: '忽略',
   Close: '关闭',
   ViewonEtherscan: '在区块浏览器中查看',
-  TransactionSubmitted: '交易已提交'
+  TransactionSubmitted: '交易已提交',
+  safe: '安全审计'
 }

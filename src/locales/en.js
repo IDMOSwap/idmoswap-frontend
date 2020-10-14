@@ -59,5 +59,6 @@ export default {
   Dismiss: 'Dismiss',
   Close: 'Close',
   ViewonEtherscan: 'View on Etherscan',
-  TransactionSubmitted: 'Transaction Submitted'
+  TransactionSubmitted: 'Transaction Submitted',
+  safe: 'Ecurity Audit'
 }

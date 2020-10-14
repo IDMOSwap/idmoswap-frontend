@@ -4,7 +4,7 @@ import '../../style/footer.css'
 import footerbg from '../../assets/img/bg.png'
 import logoMian from '../../assets/img/logo-mian.png'
 import { useTranslation } from 'react-i18next';
-
+import safe from '../../assets/imgpc/safe.png';
 const Footer: React.FC = () => {
   const { t, i18n } = useTranslation();
   return (
@@ -26,8 +26,14 @@ const Footer: React.FC = () => {
             <p className="font30 " style={{ height: '110px', }}>
               {t('joinUs')}
             </p>
-            <p style={{ height: '100px', }}>{t('abloutUs')}</p>
+            <p style={{ height: '50px', }}>{t('abloutUs')}</p>
             <p>©2020 IDMOSwap</p>
+            {i18n.language !== 'en' && <p className="safe">
+              <a href="https://defi.idmoswap.com/files/idmo_smart_contract_audit_zh_cn.pdf" target="_blank" rel="noopener noreferrer">
+                <img src={safe} alt="" />
+                <span>{t('safe')}</span>
+              </a>
+            </p>}
           </div>
         </div>
         <div className="phone-footerleft">
@@ -36,9 +42,16 @@ const Footer: React.FC = () => {
           <li><a href="https://www.facebook.com/idmoswap.idmoswap.5" target="_blank"><img src={require('../../assets/img/FaceBookP.png')} alt="" /></a><p>Facebook</p></li>
           <li><a href="mailto:idmoswap@gmail.com" target="_blank"><img src={require('../../assets/img/gmailP.png')} alt="" /></a><p>Gmail</p></li>
         </div>
+
         <div className="phone-footerright">
           <img src={require('../../assets/img/logoP.png')} style={{ width: '119px', height: '27px', marginTop: '19px' }}></img>
           <p style={{ fontSize: '12px', color: '#fff' }}>©2020 IDMOSwap</p>
+          {i18n.language !== 'en' && <p className="safe">
+            <a href="https://defi.idmoswap.com/files/idmo_smart_contract_audit_zh_cn.pdf" target="_blank" rel="noopener noreferrer">
+              <img src={safe} alt="" />
+              <span>{t('safe')}</span>
+            </a>
+          </p>}
         </div>
       </StyledFooterInner>
     </StyledFooter>
@@ -60,7 +73,7 @@ const StyledFooterInner = styled.div`
   height: 402px;
   @media (max-width: 768px) {
     display: block;
-    height:193px;
+    height:236px;
   }
   width: 100%;
   max-width: 1200px;
