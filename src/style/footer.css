@@ -58,16 +58,15 @@
 }
 .joinus p.safe a {
   color: #cccccc;
-  font-size: 19px;
+  font-size: 16px;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
 }
 .joinus p.safe a span {
-  margin-bottom: 4px;
 }
 .joinus p.safe a img {
-  width: 65px;
+  width: 40px;
   margin-right: 10px;
 }
 @media (max-width: 768px) {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 // import chef from '../../assets/img/chef.png'
 import comingsoon from '../../assets/imgpc/comingsoon.png'
@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 const Home: React.FC = () => {
   const { t, i18n } = useTranslation();
+
   return (<div className="basepage" >
     <div className="home">
       <div className="bigpic">

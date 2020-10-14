@@ -79,11 +79,12 @@ const BlockRewards: React.FC = () => {
   const [end, setEnd] = useState(0)
   const [scale, setScale] = useState(1)
 
-  // const perBlock = perBlockRewards()
-  // let endnumber = new BigNumber(perBlock)
-  //   .div(new BigNumber(10).pow(18))
-  //   .toNumber()
-  let endnumber = 8
+  const perBlock = perBlockRewards()
+  let endnumber = new BigNumber(perBlock)
+    .div(new BigNumber(10).pow(18))
+    .times(1.05)
+    .toNumber()
+  // let endnumber = 8
 
   useEffect(() => {
     setStart(end)
