@@ -28,12 +28,12 @@ const Footer: React.FC = () => {
             </p>
             <p style={{ height: '50px', }}>{t('abloutUs')}</p>
             <p>©2020 IDMOSwap</p>
-            {i18n.language !== 'en' && <p className="safe">
-              <a href="https://defi.idmoswap.com/files/idmo_smart_contract_audit_zh_cn.pdf" target="_blank" rel="noopener noreferrer">
+            <p className="safe">
+              <a href={i18n.language === 'en' ? "https://defi.idmoswap.com/files/Audit_report_of_IDMO_smart_contract_en.pdf" : 'https://defi.idmoswap.com/files/Audit_report_of_IDMO_smart_contract_cn.pdf'} target="_blank" rel="noopener noreferrer">
                 <img src={safe} alt="" />
                 <span>{t('safe')}</span>
               </a>
-            </p>}
+            </p>
           </div>
         </div>
         <div className="phone-footerleft">
@@ -46,12 +46,12 @@ const Footer: React.FC = () => {
         <div className="phone-footerright">
           <img src={require('../../assets/img/logoP.png')} style={{ width: '119px', height: '27px', marginTop: '19px' }}></img>
           <p style={{ fontSize: '12px', color: '#fff' }}>©2020 IDMOSwap</p>
-          {i18n.language !== 'en' && <p className="safe">
-            <a href="https://defi.idmoswap.com/files/idmo_smart_contract_audit_zh_cn.pdf" target="_blank" rel="noopener noreferrer">
+          <p className="safe">
+            <a href={i18n.language === 'en' ? "https://defi.idmoswap.com/files/Audit_report_of_IDMO_smart_contract_en.pdf" : 'https://defi.idmoswap.com/files/Audit_report_of_IDMO_smart_contract_cn.pdf'} target="_blank" rel="noopener noreferrer">
               <img src={safe} alt="" />
               <span>{t('safe')}</span>
             </a>
-          </p>}
+          </p>
         </div>
       </StyledFooterInner>
     </StyledFooter>
