@@ -55,6 +55,10 @@
 }
 .joinus p.safe {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
 }
 .joinus p.safe a {
   color: #cccccc;
@@ -109,6 +113,10 @@
   }
   .phone-footerright .safe {
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
   }
   .phone-footerright p.safe a {
     color: #cccccc;

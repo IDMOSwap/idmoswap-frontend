@@ -60,5 +60,7 @@ export default {
   Close: '关闭',
   ViewonEtherscan: '在区块浏览器中查看',
   TransactionSubmitted: '交易已提交',
-  safe: '安全审计'
+  safe: '安全审计',
+  AddLiquidity: '增加流动性',
+  IDMOUSDT: '兑换'
 }

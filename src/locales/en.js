@@ -60,5 +60,7 @@ export default {
   Close: 'Close',
   ViewonEtherscan: 'View on Etherscan',
   TransactionSubmitted: 'Transaction Submitted',
-  safe: 'Security Audit'
+  safe: 'Security Audit',
+  AddLiquidity: 'Add Liquidity',
+  IDMOUSDT: 'Exchange'
 }

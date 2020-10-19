@@ -5,6 +5,7 @@ import footerbg from '../../assets/img/bg.png'
 import logoMian from '../../assets/img/logo-mian.png'
 import { useTranslation } from 'react-i18next';
 import safe from '../../assets/imgpc/safe.png';
+import swappng from '../../assets/imgpc/swap.png';
 const Footer: React.FC = () => {
   const { t, i18n } = useTranslation();
   return (
@@ -33,6 +34,14 @@ const Footer: React.FC = () => {
                 <img src={safe} alt="" />
                 <span>{t('safe')}</span>
               </a>
+              <a href='https://uniswap.consenlabs.com/#/swap?inputCurrency=0xdac17f958d2ee523a2206206994597c13d831ec7&outputCurrency=0x4ba376dec87edaa662cd82278d89406864118efd' target="_blank" rel="noopener noreferrer">
+                <img src={swappng} alt="" />
+                <span>{t('IDMOUSDT')}</span>
+              </a>
+              <a href='https://uniswap.consenlabs.com/#/add/0xdAC17F958D2ee523a2206206994597C13D831ec7/0x4Ba376dec87EDaa662Cd82278d89406864118EFd' target="_blank" rel="noopener noreferrer">
+                <img src={swappng} alt="" />
+                <span>{t('AddLiquidity')}</span>
+              </a>
             </p>
           </div>
         </div>
@@ -50,6 +59,14 @@ const Footer: React.FC = () => {
             <a href={i18n.language === 'en' ? "https://defi.idmoswap.com/files/Audit_report_of_IDMO_smart_contract_en.pdf" : 'https://defi.idmoswap.com/files/Audit_report_of_IDMO_smart_contract_cn.pdf'} target="_blank" rel="noopener noreferrer">
               <img src={safe} alt="" />
               <span>{t('safe')}</span>
+            </a>
+            <a href='https://uniswap.consenlabs.com/#/swap?inputCurrency=0xdac17f958d2ee523a2206206994597c13d831ec7&outputCurrency=0x4ba376dec87edaa662cd82278d89406864118efd' target="_blank" rel="noopener noreferrer">
+              <img src={swappng} alt="" />
+              <span>{t('IDMOUSDT')}</span>
+            </a>
+            <a href='https://uniswap.consenlabs.com/#/add/0xdAC17F958D2ee523a2206206994597C13D831ec7/0x4Ba376dec87EDaa662Cd82278d89406864118EFd' target="_blank" rel="noopener noreferrer">
+              <img src={swappng} alt="" />
+              <span>{t('AddLiquidity')}</span>
             </a>
           </p>
         </div>
