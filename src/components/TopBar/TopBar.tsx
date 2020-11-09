@@ -28,7 +28,7 @@ const TopBar: React.FC<TopBarProps> = ({ onPresentMobileMenu }) => {
           </StyledAccountButtonWrapper>
         </StyledTopBarInner>
       </Container>
-      <button onClick={() => i18n.changeLanguage(i18n.language == 'en' ? 'zh' : 'en')}>{i18n.language == 'en' ? 'zh' : 'en'}</button>
+      <button onClick={() => i18n.changeLanguage(i18n.language == 'en' ? 'cn' : 'en')}>{i18n.language == 'en' ? 'cn' : 'en'}</button>
     </StyledTopBar>
   )
 }

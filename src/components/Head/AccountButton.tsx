@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import styled from 'styled-components'
 import { useWallet } from 'use-wallet'
 import useModal from '../../hooks/useModal'
@@ -21,11 +21,16 @@ const AccountButton: React.FC<AccountButtonProps> = (props) => {
   const handleUnlockClick = useCallback(() => {
     onPresentWalletProviderModal()
   }, [onPresentWalletProviderModal])
+
   const { t, i18n } = useTranslation();
   // @ts-ignore
-  if (status === "disconnected") {
-    connect('injected')
-  }
+
+  useEffect(() => {
+    if (status === "disconnected") {
+      connect('injected')
+    }
+  }, [connect, status])
+
 
   return (
     <StyledAccountButton>

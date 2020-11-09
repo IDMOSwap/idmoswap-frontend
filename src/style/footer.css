@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 88%;
   margin: 20px 0 80px;
 }
 .footerleft .social-links li {
@@ -22,7 +22,7 @@
 }
 .footerleft .social-links li img {
   display: block;
-  width: 108px;
+  width: 98px;
 }
 .footerleft .social-links li p {
   margin: 0;

@@ -4,9 +4,9 @@ import { initReactI18next } from 'react-i18next';
 import zh_CN from './locales/zh_cn.js';
 import en from './locales/en.js';
 import LanguageDetector from 'i18next-browser-languagedetector';
-
+import Cookies from 'js-cookie'
 const resources = {
-  zh: {
+  cn: {
     translation: zh_CN
   },
   en: {
@@ -18,16 +18,24 @@ i18n.use(LanguageDetector)
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: localStorage.getItem('I18N_LANGUAGE') || "en",
+    lng: Cookies.get('language') || "en",
     keySeparator: false, // we do not use keys in form messages.welcome
     interpolation: {
       escapeValue: false, // react already safes from xss
     },
+    // detection: {
+    //   order: ["cookie", 'subdomain', "navigator"],
+    //   lookupCookie: 'language',
+    //   lookupLocalStorage: "I18N_LANGUAGE",
+    //   caches: ['cookie', "localStorage"],
+    //   cookieDomain: 'idmoswap.com',
+    // },
     detection: {
-      order: ["localStorage", "navigator"],
-      lookupQuerystring: "lng",
+      order: ["cookie", 'localStorage '],
+      lookupCookie: 'language',
       lookupLocalStorage: "I18N_LANGUAGE",
-      caches: ["localStorage"]
+      caches: ['cookie', "localStorage"],
+      cookieDomain: 'idmoswap.com',
     }
   });
 

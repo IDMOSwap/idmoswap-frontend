@@ -5,6 +5,7 @@ export default {
   abloutUs: 'Get to know IDMOSwap and make joint efforts for a decentralized financial platform',
   home: 'HOME',
   meun: 'MENU',
+  vote: 'VOTE',
   Pledge: 'STAKING',
   IDMO: 'IDMO',
   EXCHANGE: 'EXCHANGE',

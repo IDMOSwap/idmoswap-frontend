@@ -41,6 +41,10 @@ function Head () {
                 <NavLink exact activeClassName="active" to="/" onClick={() => setMenushow(!menushow)}>{t('Pledge')}</NavLink>
               </li>
               <li>
+                <a href="https://vote.idmoswap.com/"
+                  target="_blank">{t('vote')}</a>
+              </li>
+              <li>
                 <NavLink exact activeClassName="active" to="/IDMO" onClick={() => setMenushow(!menushow)}>{t('IDMO')}</NavLink>
               </li>
               <li>
@@ -58,7 +62,7 @@ function Head () {
 
         </div>
         <div className="language">
-          <span className={i18n.language == 'zh' && 'active' || ""} onClick={() => i18n.changeLanguage("zh")}>CN</span>
+          <span className={i18n.language == 'cn' && 'active' || ""} onClick={() => i18n.changeLanguage("cn")}>CN</span>
           <span className={i18n.language == 'en' && 'active' || ""} onClick={() => i18n.changeLanguage('en')}>EN</span>
         </div>
       </div>
@@ -87,6 +91,10 @@ function Head () {
           <NavLink exact activeClassName="active" to="/">{t('Pledge')}</NavLink>
         </li>
         <li>
+          <a href="https://vote.idmoswap.com/"
+            target="_blank">{t('vote')}</a>
+        </li>
+        <li>
           <NavLink exact activeClassName="active" to="/IDMO">{t('IDMO')}</NavLink>
         </li>
         <li>
@@ -105,7 +113,7 @@ function Head () {
       </div>
     </div>
     <div className="language">
-      <span className={i18n.language == 'zh' ? 'active' : ''} onClick={() => i18n.changeLanguage("zh")}>CN</span>
+      <span className={i18n.language == 'cn' ? 'active' : ''} onClick={() => i18n.changeLanguage("cn")}>CN</span>
       <span className={i18n.language == 'en' ? 'active' : ''} onClick={() => i18n.changeLanguage('en')}>EN</span>
     </div>
   </div>

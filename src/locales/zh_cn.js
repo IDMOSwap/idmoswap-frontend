@@ -4,6 +4,7 @@ export default {
   abloutUs: '了解IDMOSwap，与团队沟通并加入社区，共同构建去中心化的金融世界',
   home: '首页',
   meun: '菜单',
+  vote: '投票',
   Pledge: '质押',
   IDMO: 'IDMO',
   EXCHANGE: '交易所',
